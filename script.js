@@ -103,8 +103,12 @@ function init() {
   startButton.addEventListener("click", () => secondForm());
   nextButton.addEventListener("click", () => thirdForm());
   doneButton.addEventListener("click", () => formDone());
+
+
+
 }
 
+// launh web site js functionality
 init();
 
 
