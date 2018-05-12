@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Step by Step Form</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="container">
+    <div class="main-title">
+      BMI Calculator
+    </div>
+    <div class="end-message"> </div>
+    <div class="modal-wrap">
+
+      <div class="modal-header">
+        <span class="step-circle is-active"></span>
+        <span class="step-circle-2"></span>
+        <span class="step-circle-3"></span>
+      </div>
+
+      <div class="modal-body is-showing">
+        <div class="title">Step 1 - Set Up</div>
+        <div class="description">Hello there. Let's calculate your BMI. Enter your name and email to start.</div>
+          <form>
+            <input type="text" placeholder="Name"/><br/>
+            <input type="email" placeholder="Email"/>
+
+          </form>
+          <div>
+            <button class="btn" id="start-btn">Start</button>
+          </div>
+
+      </div>
+
+      <div class="modal-body-2">
+        <div class="title">Step 2 - Calculating BMI</div>
+        <div class="description">Please Enter Your Information:</div>
+
+          <form>
+
+            Height (m)<input type="text" placeholder="Height" id="height-inp" value="0" /><br/>
+            Weight (kg)<input type="text" placeholder="Weight" id="weight-inp" value="0" />
+
+          </form>
+
+        <div>
+          <button class="btn" id="nxt-btn">Next</button>
+        </div>
+      </div>
+
+      <div class="modal-body-3">
+        <div class="title">Step 3 - RESULTS</div>
+        <div class="output"></div>
+        <div class="description">Check your email for the results.</div>
+        <div>
+          <button class="btn" id="done-btn">Done</button>
+        </div>
+      </div>
+
+
+
+    </div>
+    <div class="modal-body-end">
+      <button class="end-btn">Redo Form</button>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+
+</html>
